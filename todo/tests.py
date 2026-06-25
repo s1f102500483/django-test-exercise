@@ -4,6 +4,8 @@ from datetime import datetime
 from todo.models import Task
 
 # Create your tests here.
+
+
 class SampleTestCase(TestCase):
     def test_sample1(self):
         self.assertEqual(1 + 2, 3)
@@ -52,6 +54,7 @@ class TaskModelTestCase(TestCase):
         task.save()
 
         self.assertFalse(task.is_overdue(current))
+
 
 class TodoViewTestCase(TestCase):
     def test_index_get(self):
